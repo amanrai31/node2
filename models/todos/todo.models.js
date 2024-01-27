@@ -14,10 +14,10 @@ const todoSchema = new mongoose.Schema({
     },
     subTodos: [                                                         // Array of SubTodo
         {
-            tupe: mongoose.Schema.Types.ObjectId,
+            type: mongoose.Schema.Types.ObjectId,
             ref: "SubTodo"
         }
-    ]
+    ],
 }, { timestamps: true });
 
 export const Todo = mongoose.model('Todo', todoSchema);        // name will be todos in mongoDB  

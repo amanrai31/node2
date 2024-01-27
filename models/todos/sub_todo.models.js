@@ -8,7 +8,7 @@ content:{
 complete:{
     type:Boolean,
     default: false
-}
+},
 },{timestamps:true});
 
 export const Subtodo = mongoose.model('Subtodo', subtodoSchema);

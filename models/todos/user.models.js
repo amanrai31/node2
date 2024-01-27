@@ -2,7 +2,7 @@
 
 import mongoose from "mongoose"
 
-const userSchema=new mongoose.Schema({           // mongooes ka schema,,basic syntax--const userSchema=new mongoose.Schema({..},{timestamps})
+const userSchema=new mongoose.Schema({           // mongooes ka schema,,basic syntax--//const userSchema=new mongoose.Schema({..},{timestamps}) //
   username:{                             
     type: String,
     reuired: true,
@@ -18,7 +18,7 @@ const userSchema=new mongoose.Schema({           // mongooes ka schema,,basic sy
   password:{
     type:String,
     required: [true, "password required"],                     // addition valdation with message.
-  }
+  },
 }
 ,{timestamps:true} )                  
 
